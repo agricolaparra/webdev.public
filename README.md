@@ -1,26 +1,16 @@
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+webdev.public
 
+Web front-end track objectives
 
-Hi there! Welcome to Cloud9 IDE!
+Provide concepts, technologies and skills for web front-end development
+HTML, CSS and JavaScript
+Teach the basics of creating user interface
+Ending with creating of web applications entirely with JavaScript, HTML and CSS
+Web front-end developers create and maintain modern websites, taking care of the site layout, navigation and functionality, including:
 
-To get you started, we included a small hello world application.
-
-1) Open the hello-world.html file
-
-2) Click on the Preview button to open a live preview pane
-
-3) Make some changes to the file, save, watch the preview, and have fun!
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for documentation, or http://support.c9.io for support.
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+Creating modern websites
+Providing convenient navigation and structured content
+Uniform visualization of different browsers, devices and their versions
+Meeting standards on site
+Developing a JavaScript applications Styling sites
+Development of Dynamic Web Pages
