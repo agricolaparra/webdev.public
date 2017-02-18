@@ -1,0 +1,55 @@
+#root {
+  display: block;
+  width: 960px;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+a {
+  color: #f00;
+}
+a:visited {
+  color: #646363;
+}
+.box-5 {
+  border-top: 1px solid #000;
+  width: 100px;
+}
+.box {
+  border: 1px solid #000;
+  width: 100px;
+  height: 50px;
+  padding-top: 50px;
+  border-radius: 25px;
+}
+.box-6 {
+  width: 100px;
+  font-size: 87px;
+  height: 250px;
+  border: 1px solid #000;
+}
+.button {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+.rect {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: '1px solid black';
+  background: rgba(123,0,0,0.6);
+  border-radius: 15px;
+}
+.hlist {
+  list-style-type: none;
+}
+.hlist .list-item {
+  float: left;
+  border-right: 1px solid #ccc;
+}
+.hlist .list-item:last-of-type {
+  border-right: none;
+}

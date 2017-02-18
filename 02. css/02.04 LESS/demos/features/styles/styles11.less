@@ -1,0 +1,15 @@
+.paddingMixin(@size) when (@size > 50px) {
+    padding: (@size - 15px);
+}
+
+.paddingMixin(@size) when (@size <= 50px) {
+    padding: (@size + 15px);
+}
+
+.myclass {
+    .paddingMixin(25px);
+}
+
+.anotherclass {
+    .paddingMixin(60px);
+}

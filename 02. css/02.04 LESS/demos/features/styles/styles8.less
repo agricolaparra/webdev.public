@@ -1,0 +1,15 @@
+.color(dark, @color) {
+    color: darken(@color, 10%);
+}
+
+.color(light, @color) {
+    color: lighten(@color, 10%);
+}
+
+p {
+    .color(dark, #aaa);
+}
+
+span {
+    .color(light, #444);
+}

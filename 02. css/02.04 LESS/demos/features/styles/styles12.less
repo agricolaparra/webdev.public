@@ -1,0 +1,8 @@
+.manyWidths(@index) when (@index < 5) {
+    .manyWidths(@index + 1);
+    width: @index * 25px;
+}
+
+h6 {
+    .manyWidths(1);
+}

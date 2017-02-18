@@ -1,0 +1,8 @@
+.calculateSum(@x, @y) {
+    @sum: (@x + @y);
+}
+
+div p {
+    .calculateSum(5px, 10px);
+    width: @sum;
+}

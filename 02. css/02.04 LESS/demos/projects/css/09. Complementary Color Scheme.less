@@ -1,0 +1,19 @@
+/* Mixin */
+@base: #663333;
+@complement1: spin(@base, 180);
+@complement2: darken(spin(@base, 180), 5%);
+@lighten1: lighten(@base, 15%);
+@lighten2: lighten(@base, 30%);
+
+/* Implementation */
+.one   {background-color: @base;}
+.two   {background-color: @complement1;}
+.three {background-color: @complement2;}
+.four  {background-color: @lighten1;}
+.five  {background-color: @lighten2;}
+
+div {
+	width: 100px;
+	height: 188px;
+	display: inline-block;
+}

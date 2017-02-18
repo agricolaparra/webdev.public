@@ -1,0 +1,72 @@
+#root
+  display block
+  width 960px
+  margin 0 auto
+  border 1px solid black
+  
+link-color= #ff0000;
+v-link-color= #646363;
+
+a
+  color link-color
+  &:visited
+    color v-link-color
+
+side= 'top'
+number= 5
+.box-{number}
+    border-{side} 1px solid black
+    width 100px
+    
+.box
+    border 1px solid black
+    width 100px
+    height (@width/2)
+    padding-{side} (@width/2)
+    border-radius (min(@width, @height)/2)
+
+//props = (padding 5px) (display block)
+//push(props, (float left))
+
+//.box-6
+
+sum(items)
+    sum = 0px
+    for val in items
+        sum = sum + val
+    sum
+
+.box-6      
+  width 100px
+  font-size sum(14px 28px 45px)
+  height sum(@width  + 150px)
+  border 1px solid black
+  
+vendor(prop, args)
+    -webkit-{prop} args
+    -moz-{prop} args
+    {prop} args
+    
+.button
+  vendor('opacity', 0.5)
+  vendor('border-radius', 15px)
+  
+box(border= none, bg= rgba(0, 0, 0, 0.7), size= 200px)
+    width size
+    height size
+    border border
+    background bg
+    border-radius 15px
+
+.rect
+  display inline-block
+  box '1px solid black' rgba(123, 0, 0, 0.6) 100px   
+  
+
+.hlist
+  list-style-type none
+  .list-item
+    float left
+    border-right 1px solid #ccc
+    &:last-of-type
+      border-right none

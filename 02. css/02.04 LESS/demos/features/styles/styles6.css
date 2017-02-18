@@ -1,0 +1,15 @@
+.mymixin {
+  padding: 50px;
+  border: 1px solid black;
+  width: 25%;
+}
+h3 {
+  padding: 50px;
+  border: 1px solid black;
+  width: 25%;
+}
+h4 {
+  padding: 50px;
+  border: 1px solid black;
+  width: 25%;
+}
