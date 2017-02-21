@@ -14,3 +14,8 @@ Uniform visualization of different browsers, devices and their versions
 Meeting standards on site
 Developing a JavaScript applications Styling sites
 Development of Dynamic Web Pages
+
+Web front-end requirements
+
+IDE - WebStorm/Atom
+Version Control Repository - github
