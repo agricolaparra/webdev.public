@@ -1,0 +1,20 @@
+﻿div
+{
+    margin: 15px;
+    display:inline;
+    text-align:justify;
+}
+#toSelect
+{
+    border: 1px solid Green;
+}
+#selectedText
+{
+    border: 1px solid Blue;
+}
+
+#selectedText, #toSelect
+{
+    width:40%;
+    float: left;
+}

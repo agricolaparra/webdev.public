@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="Stylesheet" href="styles/default.css" />
+</head>
+<body onmouseup="mouseUp()" onmousedown="mouseDown()">
+<div>
+        <div id="toSelect" onclick="mouseDown()" onmouseup="mouseUp()" onmousemove="mouseMove()">Lorem ipsum dolor sit amet, nam dolor ipsum, orci malesuada diam turpis justo interdum. Urna orci sed, volutpat tempor. Vestibulum orci eu vulputate porttitor sollicitudin porttitor, eget pellentesque, etiam vel posuere, eiusmod pede arcu arcu id lorem, mauris et elit id eget faucibus nibh. Lacus ultricies justo nulla, vitae a sapien sit platea est consequatur. Eros aliquet. Ut quam ac venenatis, nulla lacus ipsum ligula. Elit velit dignissim, lectus eget aliquam vehicula ligula pede convallis, et amet dolor, convallis cursus turpis accumsan nunc, ut at ut purus commodo. Vel rhoncus curabitur ac, dolor quisque lacus, turpis justo. Volutpat lorem, ut nec est adipiscing. Vestibulum elit platea quisquam penatibus turpis, blandit nulla in metus odio praesent aenean. Duis neque nulla vitae duis arcu vitae, dolor lectus.</div>
+    <div id="selectedText"/>
+</div>
+<script type="text/javascript">
+    isMouseUp=false;
+    function mouseDown() {
+        isMouseUp = true;
+    }
+
+    function mouseUp() {
+        isMouseUp = false;
+    }
+
+    function mouseMove() {
+        if (isMouseUp) {
+            document.getElementById("selectedText").innerHTML = window.getSelection();
+        }
+    }
+
+</script>
+</body>
+</html>

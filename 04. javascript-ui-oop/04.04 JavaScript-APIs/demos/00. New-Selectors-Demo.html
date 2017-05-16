@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>New Selectors Demo</title>
+</head>
+<body>
+    <div >
+        asdasd</div>
+    <div />
+    <div>
+        asdasd</div>
+    <div />
+    <div class="someClass">
+        asdasd</div>
+    <div />
+    <div>
+        asdasd</div>
+    <div />
+    <div class="someClass">
+        asdasd</div>
+    <div />
+    <div>
+        asdasd</div>
+    <div />
+    <div class="someClass">
+        asdasd</div>
+    <div />
+    <script type="text/javascript">
+
+        var divs = document.querySelectorAll(".someClass");
+        for (var i = 0; i < divs.length; i++) {
+            divs[i].style.color = 'Red';
+        }
+
+        var firstSomeClass = document.querySelector(".someClass");
+        firstSomeClass.style.background = "Yellow";
+
+    </script>
+</body>
+</html>

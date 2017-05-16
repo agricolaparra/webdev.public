@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Auto Saving Text Example</title>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+    <textarea id="ta" rows="20" cols="20"></textarea>
+    <textarea id="savedTextArea" rows="20" cols="20"></textarea>
+
+    <script type="text/javascript">
+        document.querySelector("#ta").
+        addEventListener("keyup", function (e) {
+            document.getElementById("savedTextArea").value = this.value;
+        }, false);
+
+    </script>
+</body>
+</html>
