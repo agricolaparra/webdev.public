@@ -19,5 +19,7 @@ Development of Dynamic Web Pages
 Web front-end requirements
 
 IDE - WebStorm/Atom
+
 Documentation - http://devdocs.io/
+
 Version Control Repository - github
