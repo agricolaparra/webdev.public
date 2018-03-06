@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/grid.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <style type="text/css">
+     /* Style for third case*/
+      article.col-sm-10, nav.col-sm-2 {
+        line-height: 100px;
+      }
+    </style>
+    
+    <style type="text/css">
+     /* Style for forth case*/
+      footer {
+        border: 0;
+      }
+      article.col-sm-6, nav.col-sm-2 {
+        line-height: 60px;
+      }
+    </style>
+
+    
+  </head>
+
+  <body>
+
+        <!-- Let's start with something simple with a header, a menu on the left, a section on the right and a footer
+        I used classes for big screen with class col-lg-*, so that the reduction, I find myself with a stack as soon as I go below 1200 pixels
+        If I want my formatting to stay stable for the average screens, I just use classes col-md-* instead of col-lg-*, which has the effect of moving the limit to 992 pixels. In the same way, the use of classes col-sm-* moves the limit to 768 pixels ...
+        -->
+        
+        <div class="container">
+          <header class="row">
+            <div class="col-lg-12">
+              Header
+            </div>
+          </header>
+          <div class="row">
+            <nav class="col-lg-2">
+              Menu
+            </nav>
+            <section class="col-lg-10">
+              Section
+            </section>
+          </div>
+          <footer class="row">
+              Footer
+          </footer>
+        </div>
+
+      <hr class="blue_line"/>
+      
+      <!-- Second case - a richer case
+      We kept the header and the footer, as well as the menu, but we integrated in the content one article and one aside. The set is intended to work on desktop (large and small). For tablets, we end up with a stack for the content of the section (use of classes col-md-* for article and aside),
+            -->
+            
+        <div class="container">
+        <header class="row">
+          <div class="col-sm-12">
+            Header
+          </div>
+        </header>
+        <div class="row">
+          <nav class="col-sm-2">
+            Menu
+          </nav>
+          <section class="col-sm-10">
+            Section
+            <div class="row">
+              <article class="col-md-10">
+                Article
+              </article>
+              <aside class="col-md-2">
+                Aside
+              </aside>
+            </div>
+          </section>
+        </div>
+        <footer class="row">
+          <div class="col-sm-12">
+            Footer
+          </div>
+        </footer>
+      </div>
+      
+      <hr class="blue_line"/>
+            
+      <!-- Third case - a richer case
+      We kept the header and the footer, as well as the menu, but we integrated in the content one article and one aside. The set is intended to work on desktop (large and small). For tablets, we end up with a stack for the content of the section (use of classes col-md-* for article and aside)
+      Now we have 2 asides next to the article. To get there, you need 2 levels of nesting. We also have a complete stack at the reduction
+      -->
+            
+       <div class="container">
+        <header class="row">
+          <div class="col-lg-12">
+            Header
+          </div>
+        </header>
+        <div class="row">
+          <nav class="col-sm-2">
+            Menu
+          </nav>
+          <section class="col-sm-10">
+            Section
+            <div class="row">
+              <article class="col-sm-10">
+                Article
+              </article>
+              <div class="col-sm-2">
+                <div class="row">
+                  <aside class="col-sm-12">
+                    Aside 1
+                  </aside>
+                  <aside class="col-sm-12">
+                    Aside 2
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <footer class="row">
+          <div class="col-lg-12">
+            Footer
+          </div>
+        </footer>
+       </div>
+      
+      <hr class="blue_line"/>
+      
+      <!-- Fourth case - a richer case
+      In the 2 sections, I put 6 articles of a width of 6 columns which are positioned perfectly. It is not necessary to create 3 rows. In the second section, I did not put in aside to show a mix of compositions. The offset of the second section to take into account the width of the menu is done simply with an offset class. Regarding the choice of classes for columns I arranged for the first section to keep its structure when narrowing.
+      -->
+      
+        <div class="container">
+          <header class="row">
+            <div class="col-lg-12">
+              Header
+            </div>
+          </header>
+          <div class="row">
+            <nav class="col-sm-2">
+              Menu
+            </nav>
+            <section class="col-sm-10">
+              Section
+              <div class="row">
+                <div class="col-sm-10">
+                  <div class="row">
+                    <article class="col-sm-6">
+                      Article
+                    </article>
+                    <article class="col-sm-6">
+                      Article
+                    </article>
+                    <article class="col-sm-6">
+                      Article
+                    </article>
+                    <article class="col-sm-6">
+                      Article
+                    </article>
+                    <article class="col-sm-6">
+                      Article
+                    </article>
+                    <article class="col-sm-6">
+                      Article
+                    </article>
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="row">
+                    <aside class="col-sm-12">
+                      Aside 1
+                    </aside>
+                    <aside class="col-sm-12">
+                      Aside 2
+                    </aside>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="col-sm-offset-2 col-sm-10">
+              Section
+              <div class="row">
+                <article class="col-sm-6">
+                  Article
+                </article>
+                <article class="col-sm-6">
+                  Article
+                </article>
+                <article class="col-sm-6">
+                  Article
+                </article>
+                <article class="col-sm-6">
+                  Article
+                </article>
+                <article class="col-sm-6">
+                  Article
+                </article>
+                <article class="col-sm-6">
+                  Article
+                </article>
+              </div>
+            </section>
+          </div>
+          <footer class="row">
+            <div class="col-lg-12">
+              Footer
+            </div>
+          </footer>
+        </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
