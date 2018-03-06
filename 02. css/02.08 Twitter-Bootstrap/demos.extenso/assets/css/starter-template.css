@@ -1,0 +1,7 @@
+body {
+  padding-top: 50px; /* to prevent the text from the beginning from being under the bar */
+}
+.starter-template { /* content to fix an internal space and a centered alignment of the text */
+  padding: 40px 15px;
+  text-align: center;
+}
