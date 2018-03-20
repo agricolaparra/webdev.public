@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/grid.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <style type="text/css">
+      body { background-color:#DDD; }
+      [class*="col"] { margin-bottom: 20px; }
+      img { width: 100%; }
+      body { margin-top: 10px; }
+
+      body { padding-top: 70px; }
+
+      .pull-right {
+        float: right !important;
+      }
+
+      .well {
+        background-color:#CCC;
+        padding: 20px;
+      }
+
+      .has-error {
+        color:#a94442;
+        background-color:#f2dede;
+        border-radius: 5px;
+      }
+
+      .inline-form { margin-top: 20px}
+
+      .inline-form input {
+        display: inline-block;
+        width: 100px;
+      }
+
+      a:focus { outline:0; }
+
+
+    </style>
+
+    
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <nav class="navbar navbar-inverse navbar-fixed-top"> <!-- navbar-default - white background; -->
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Comic Books</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"> <a href="#">Home</a> </li>
+            <li> <a href="#">Books</a> </li>
+            <li> <a href="#">Testimonials</a> </li>
+            <li class="disabled"> <a href="#">References</a> </li>
+          </ul>
+          <form class="navbar-form navbar-right inline-form">
+            <div class="form-group">
+              <input type="search" class="input-sm form-control" placeholder="Search">
+              <button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> Search</button>
+            </div>
+          </form>
+        </div>
+      </nav>
+
+      <header class="row">
+        <div class="col-sm-12 col-lg-7">
+          <h1>Comic book</h1>
+        </div>
+        <div class="col-sm-12 col-lg-5">
+          <form class="form-inline pull-right"> <!-- Notice the responsive processing for this form. For a widescreen, it is stalled at the top right with a class col-lg-5 and a pull-right. When we move to the medium format, it is left with the class col-sm-12 in such a way that it comes to arrange itself under the title, always stalled on the right -->
+            <input type="text" style="width:150px" class="input-sm form-control" placeholder="Search">
+            <button type="submit" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-eye-open"></span> Search</button>
+          </form>
+        </div>
+      </header>
+
+      <section class="row">
+        <div class="col-lg-12">
+          <p>
+            A <strong>comic book</strong> is a publication that consists of comic art in the form of sequential juxtaposed panels that represent individual scenes. <br>
+           Panels are often accompanied by brief descriptive prose and written narrative, usually dialog contained in word balloons emblematic of the comics art form. 
+          </p>
+          <p>Look on wikipedia :</p>
+          <blockquote>
+           Although comics has some origins in 18th century Japan and 1830s Europe, comic books were first popularized in the United States during the 1930s.[clarification needed] The first modern comic book, Famous Funnies, was released in the United States in 1933 and was a reprinting of earlier newspaper humor comic strips, which had established many of the story-telling devices used in comics.[2] The term comic book derives from American comic books once being a compilation of comic strips of a humorous tone; however, this practice was replaced by featuring stories of all genres, usually not humorous in tone.<br>
+            <small class="pull-right">Wikipedia</small><br>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="row">
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t1.jpg" alt="Book" class="img-rounded"></div>
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t2.jpg" alt="Book" class="img-circle"></div>
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t3.jpg" alt="Book" class="img-thumbnail"></div>
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t4.jpg" alt="Book" class="img-rounded"></div>
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t5.jpg" alt="Book" class="img-rounded"></div>
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t6.jpg" alt="Book" class="img-rounded"></div>
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t7.jpg" alt="Book" class="img-rounded"></div>
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t8.jpg" alt="Book" class="img-rounded"></div>
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t9.jpg" alt="Book" class="img-rounded"></div>
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t10.jpg" alt="Book" class="img-rounded"></div>
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t11.jpg" alt="Book" class="img-rounded"></div>
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t12.jpg" alt="Book" class="img-rounded"></div>
+      </section>
+      
+      <div class="row">
+        <section class="col-sm-4">
+          <h5>Kind of firestorm :</h5>
+          <br>
+          <ul> <!-- elegant formatting lists; there is the class list-unstyled, to apply to the tag <ul>, which gives therefore <ul class="list-unstyled">, which removes the chips;  try to use the class list-inline, so <ul class="list-inline">. -->
+            <li>Ronnie Raymond/Martin Stein</li>
+            <li>Ronnie Raymond/Martin Stein/Mikhail Arkadin</li>
+            <li>Fire Elemental</li>
+            <li>Jason Rusch</li>
+            <li>Infinite Crisis</li>
+            <li>Series 52</li>
+            <li>One Year Later</li>
+            <li>Anti-Life Equation</li>
+            <li>Justice League</li>
+          </ul>
+        </section>
+        <section class="col-sm-8">
+          <img src="img/t1.jpg" alt="Book" class="img-rounded">
+        </section>
+      </div>
+      <div class="row">
+        <section class="col-sm-8 table-responsive">
+          <table class="table table-bordered table-striped table-condensed">
+            <!-- Class "table" - this is the base class for arrays, sets some styles, and creates horizontal separator lines; table-bordered" class - this is the class to have borders; table-striped" class - this class adds a background with a very light gray for odd lines (1, 3, ...); "table-condensed" class - this class condenses the table so that it occupies less space vertically; table adaptable with "table-responsive" class - What happens to a table when we reduce the width of the display? The columns of the table are reduced accordingly until making the appearance neither very aesthetic nor very readable. By enclosing the table with the class table-responsive, a scrollbar is displayed when the width of the display goes below 768px -->
+            <caption>
+            <h4>Black Saturday firestorm (Wildfire case study)</h4>
+            </caption>
+            <thead>
+              <tr>
+                <th>City / event</th>
+                <th>Date of the firestorm</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr> <!-- You have the possibility to color the bottom lines of the tables with the classes info, success, danger, warning and active  -->
+                <td>Bombing of Hamburg</td>
+                <td>46,000 dead. A firestorm area of approximately 4.5 square miles (12 km2) was reported at Hamburg.</td>
+              </tr>
+              <tr>
+                <td>Bombing of Kassel</td>
+                <td>9,000 dead. 24,000 dwellings destroyed. Area burned 23 square miles (60 km2); the percentage of this area which was destroyed by conventional conflagration and that destroyed by firestorm is unspecified.Although a much larger area was destroyed by fire in Kassel than even Tokyo and Hamburg, the city fire caused a smaller less extensive firestorm than that at Hamburg</td>
+              </tr>
+              <tr>
+                <td>Bombing of Darmstadt</td>
+                <td>8,000 dead. Area destroyed by fire 4 square miles (10 km2). Again the percentage of this which was done by firestorm remains unspecified. 20,000 dwellings and one chemical works destroyed and industrial production reduced.</td>
+              </tr>
+              <tr>
+                <td>Bombing of Dresden</td>
+                <td>Up to 25,000 dead.[30] A firestorm area of approximately 8 square miles (21 km2) was reported at Dresden. The attack was centered on the readily identifiable Ostragehege sports stadium.</td>
+              </tr>
+              <tr>
+                <td>Bombing of Tokyo</td>
+                <td>he firebombing of Tokyo started many fires which converged into a devastating conflagration covering 16 square miles (41 km2). Although often described as a firestorm event, the conflagration did not generate a firestorm as the high prevailing surface winds gusting at 17 to 28 mph (27 to 45 km/h) at the time of the fire overrode the fire's ability to form its own wind system./td>
+              </tr>
+              <tr>
+                <td>Bombing of Ube</td>
+                <td>A momentary firestorm of about 0.5 square miles (1.3 km2) was reported at Ube, Japan. The reports that the Ube bombing produced a firestorm, along with computer modelling,[citation needed] have set one of the four physical conditions which a city fire must meet to have the potential of developing true firestorm effects.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+
+      <div class="row">
+        <section class="col-sm-8">
+          <form class="well">
+            <legend>Do you want to send a message</legend>
+            <h4>Comments please</h4>
+            <fieldset>
+              <div class="radio">
+                <label for="ami" class="radio">
+                  <input type="radio" name="origine" value="ami" id="ami">
+                  For a friend
+                </label>
+              </div>
+              <div class="radio">
+                <label for="web" class="radio">
+                  <input type="radio" name="origine" value="web" id="web">
+                  Over the web
+                </label>
+              </div>
+              <div class="radio">
+                <label for="hasard" class="radio">
+                  <input type="radio" name="origine" value="hasard" id="hasard">
+                  For hazard
+                </label>
+              </div>
+              <div class="radio">
+                <label for="autre" class="radio">
+                  <input type="radio" name="origine" value="autre" id="autre">
+                  Others...
+                </label>
+              </div>
+              <label for="textarea">Your message :</label>
+              <textarea id="textarea" class="form-control" rows="4"></textarea>
+              <div class="form-group"></div>
+              <p class="help-block">Do you wish to close the window ?</p>
+              <button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-ok-sign" style="color:#4f4;"></span> Send</button>
+            </fieldset>
+          </form>
+        </section>
+
+        <section class="col-sm-4">
+          <address>
+          <p>This page was last edited on 4 February 2018, at 21:15</p>
+          <strong>Text is available</strong><br>
+            under the Creative Commons Attribution-ShareAlike License<br>
+          </address>
+        </section>
+      </div>
+    </div>
+
+    <br />
+    <div class="container">
+      <div id="content" class="row">
+        <div class="col-lg-2"><img src="img/t1.jpg" alt="Book" class="img-thumbnail"></div>
+        <div class="col-lg-2"><img src="img/t2.jpg" alt="Book" class="img-thumbnail"></div>
+        <div class="col-lg-2"><img src="img/t3.jpg" alt="Book" class="img-thumbnail"></div>
+        <div class="col-lg-2"><img src="img/t4.jpg" alt="Book" class="img-thumbnail"></div>
+        <div class="col-lg-2"><img src="img/t5.jpg" alt="Book" class="img-thumbnail"></div>
+        <div class="col-lg-2"><img src="img/t6.jpg" alt="Book" class="img-thumbnail"></div>
+        <div class="col-lg-2"><img src="img/t7.jpg" alt="Book" class="img-thumbnail"></div>
+        <div class="col-lg-2"><img src="img/t8.jpg" alt="Book" class="img-thumbnail"></div>
+        <div class="col-lg-2"><img src="img/t9.jpg" alt="Book" class="img-thumbnail"></div>
+        <div class="col-lg-2"><img src="img/t10.jpg" alt="Book" class="img-thumbnail"></div>
+        <div class="col-lg-2"><img src="img/t11.jpg" alt="Book" class="img-thumbnail"></div>
+        <div class="col-lg-2"><img src="img/t12.jpg" alt="Book" class="img-thumbnail"></div>
+      </div>
+      <div id="page_navigation"> </div>
+    </div>
+
+
+
+  </body>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script>
+        // we also want a warning message and to disappear after 4 seconds
+        $(function(){
+            $("form").on("submit", function() {
+                if($("textarea").val().length < 4) {
+                    $("div.form-group").text("Error !!! Please type more than 4 characters");
+                    $("div.form-group").addClass("has-error");
+                    $("div.form-group").show("slow").delay(4000).hide("slow");
+                    return false;
+                }
+            });
+        });
+    </script>
+
+    <script>
+        // Pagination - scroll the images 3 by 3
+        var show_per_page = 3;
+        var current_page = 0;
+
+        function set_display(first, last) {
+            $('#content').children().css('display', 'none');
+            $('#content').children().slice(first, last).css('display', 'block');
+        }
+
+        function previous(){
+            if($('.active').prev('.page_link').length) go_to_page(current_page - 1);
+        }
+
+        function next(){
+            if($('.active').next('.page_link').length) go_to_page(current_page + 1);
+        }
+
+        function go_to_page(page_num){
+            current_page = page_num;
+            start_from = current_page * show_per_page;
+            end_on = start_from + show_per_page;
+            set_display(start_from, end_on);
+            $('.active').removeClass('active');
+            $('#id' + page_num).addClass('active');
+        }
+
+        $(document).ready(function() {
+
+            var number_of_pages = Math.ceil($('#content').children().length / show_per_page);
+
+            var nav = '<ul class="pagination"><li><a href="javascript:previous();">&laquo;</a>';
+
+            var i = -1;
+            while(number_of_pages > ++i){
+                nav += '<li class="page_link'
+                if(!i) nav += ' active';
+                nav += '" id="id' + i +'">';
+                nav += '<a href="javascript:go_to_page(' + i +')">'+ (i + 1) +'</a>';
+            }
+            nav += '<li><a href="javascript:next();">&raquo;</a></ul>';
+
+            $('#page_navigation').html(nav);
+            set_display(0, show_per_page);
+
+        });
+
+    </script>
+
+
+
+</html>

@@ -46,7 +46,16 @@
         float: right !important;
       }
 
+      .well {
+        background-color:#CCC;
+        padding: 20px;
+      }
 
+      .has-error {
+        color:#a94442;
+        background-color:#f2dede;
+        border-radius: 5px;
+      }
 
     </style>
 
@@ -149,6 +158,47 @@
             </tbody>
           </table>
         </section>
+      </div>
+
+      <div class="row">
+        <section class="col-sm-8">
+          <form class="well">
+            <legend>Do you want to send a message</legend>
+            <h4>Comments please</h4>
+            <fieldset>
+              <div class="radio">
+                <label for="ami" class="radio">
+                  <input type="radio" name="origine" value="ami" id="ami">
+                  For a friend
+                </label>
+              </div>
+              <div class="radio">
+                <label for="web" class="radio">
+                  <input type="radio" name="origine" value="web" id="web">
+                  Over the web
+                </label>
+              </div>
+              <div class="radio">
+                <label for="hasard" class="radio">
+                  <input type="radio" name="origine" value="hasard" id="hasard">
+                  For hazard
+                </label>
+              </div>
+              <div class="radio">
+                <label for="autre" class="radio">
+                  <input type="radio" name="origine" value="autre" id="autre">
+                  Others...
+                </label>
+              </div>
+              <label for="textarea">Your message :</label>
+              <textarea id="textarea" class="form-control" rows="4"></textarea>
+              <div class="form-group"></div>
+              <p class="help-block">Do you wish to close the window ?</p>
+              <button class="btn btn-primary" type="submit">Send</button>
+            </fieldset>
+          </form>
+        </section>
+
         <section class="col-sm-4">
           <address>
           <p>This page was last edited on 4 February 2018, at 21:15</p>
@@ -157,23 +207,33 @@
           </address>
         </section>
       </div>
-    
+    </div>
     
     </div>
+  </body>
 
-   
-
-
-
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
     <script src="dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script>
+        // we also want a warning message and to disappear after 4 seconds
+        $(function(){
+            $("form").on("submit", function() {
+                if($("textarea").val().length < 4) {
+                    $("div.form-group").text("Error !!! Please type more than 4 characters");
+                    $("div.form-group").addClass("has-error");
+                    $("div.form-group").show("slow").delay(4000).hide("slow");
+                    return false;
+                }
+            });
+        });
+    </script>
+
   </body>
 </html>
