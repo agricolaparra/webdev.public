@@ -1,0 +1,30 @@
+<ul> 
+  <li>Doncho Minkov</li> <li>Svetlin Nakov</li> 
+  <li>Georgi Georgiev</li> <li>Nikolay Kostov</li>
+  <li>Asya Georgieva</li> 
+</ul>
+<script type="text/javascript">
+var trainers = document.getElementsByTagName("ul")[0];
+var trainer = trainers.getElementsByTagName("li")[0];
+trainers.removeChild(trainer);
+</script>
+
+
+<div id="f"><p id="the-p">text</p></div>
+<div id="s"></div>
+<script type="text/javascript">
+var second = document.getElementById("s");
+var theP = document.getElementById("the-p");
+second.appendChild(theP);
+</script>
+//the DOM is:
+<div id="f"></div>
+<div id="s"><p id="the-p">text</p></div>
+
+<div id="content">cont</div>
+<script type="text/javascript">
+var div = document.getElementById("content");
+div.style.display = "block";
+div.style.border ="1px solid black"
+div.style.width = "123px";
+</script>

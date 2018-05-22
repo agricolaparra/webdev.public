@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Function expressions: Traversing the DOM demo</title>
+</head>
+<body>
+	<h1>Demo of recursion in JavaScript</h1>
+	<script>
+		function traverse(node) {
+		traverseNode(node, '');
+	
+		function traverseNode(node, spacing) {
+			var i,
+				len,
+				child;
+			spacing = spacing || '  ';
+			console.log(spacing + node.nodeName);
+			for (i = 0, len = node.childNodes.length; i < len; i += 1) {
+				child = node.childNodes[i];
+				if (child.nodeType === 1) {
+					traverseNode(child, spacing + '  ');
+				}
+			}
+			console.log(spacing + '/' + node.nodeName);
+		}
+}
+
+traverse(document.documentElement);
+	</script>
+</body>
+</html>
